@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veloris Agency · Dominio, protección y lo legal básico</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F0E6DB;--tx:#1a1416;--mut:#5a4a3a;--gold:#8a6a22;--wine:#7A1224;--card:#fff;--ln:rgba(26,20,22,.18);--hg1:#7A1224;--hg2:#3a0a12;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C0C0C;--tx:#F0E6DB;--mut:#c9bba8;--gold:#D8B56D;--wine:#A01D32;--card:#1A1416;--ln:rgba(240,230,219,.25);--hg1:#EBDCC0;--hg2:#6A5446}}
+:root[data-theme="dark"]{--bg:#0C0C0C;--tx:#F0E6DB;--mut:#c9bba8;--gold:#D8B56D;--wine:#A01D32;--card:#1A1416;--ln:rgba(240,230,219,.25);--hg1:#EBDCC0;--hg2:#6A5446}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-padding-top:70px;scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--tx);font-family:Kanit,system-ui,sans-serif;font-weight:300;line-height:1.55;font-size:1rem;overflow-x:clip}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px 22px;flex-wrap:wrap;padding:12px clamp(16px,4vw,40px);background:var(--bg);border-bottom:1px solid var(--ln);font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}
+nav a{text-decoration:none;padding:4px 0}nav a:hover{color:var(--gold)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.hero{padding:clamp(48px,8vw,110px) 0 clamp(40px,6vw,80px);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.hg{background:linear-gradient(180deg,var(--hg1),var(--hg2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;font-weight:900;text-transform:uppercase;line-height:.98;letter-spacing:-.01em}
+.hero h1{font-size:clamp(2.6rem,9vw,6.4rem)}
+.hero p{max-width:34rem;margin-top:22px;font-size:clamp(1.05rem,2vw,1.3rem);font-weight:400}
+.logo{width:clamp(130px,22vw,260px);aspect-ratio:1;border-radius:24px;box-shadow:0 0 0 1px var(--gold),0 24px 60px rgba(122,18,36,.4)}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.logo{order:-1;width:120px}}
+section{padding:clamp(48px,7vw,96px) 0;border-top:1px solid var(--ln)}
+h2{font-weight:900;text-transform:uppercase;font-size:clamp(2rem,6vw,3.6rem);line-height:1;margin-bottom:12px}
+.lead{max-width:40rem;font-size:1.1rem;font-weight:400;margin-bottom:32px}
+h3{font-weight:600;font-size:1.25rem;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:22px}
+.card .price{font-weight:800;font-size:2rem;color:var(--gold);line-height:1.1;margin:4px 0 2px}
+.card .per{color:var(--mut);font-size:.9rem;margin-bottom:12px}
+.card ul,.card ol{padding-left:1.2rem}.card li{margin-bottom:5px}
+.tw{overflow-x:auto;border:1px solid var(--ln);border-radius:16px;margin:20px 0;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+th,td{padding:12px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--ln)}
+th{font-weight:600;color:var(--gold)}tr:last-child td{border-bottom:0}
+td.n{font-weight:600;white-space:nowrap}
+.note{border-left:4px solid var(--wine);padding:6px 0 6px 16px;margin:24px 0;max-width:46rem;font-weight:400}
+.tag{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:999px;padding:1px 12px;font-size:.8rem;font-weight:500;margin-bottom:10px}
+.big{font-weight:900;font-size:clamp(2rem,6vw,3.4rem);color:var(--gold);line-height:1}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;list-style:none}
+.links a{display:block;border:1px solid var(--ln);border-radius:14px;padding:12px 16px;text-decoration:none;background:var(--card)}
+.links a:hover{border-color:var(--gold)}.links small{display:block;color:var(--mut)}
+.ex{background:rgba(216,181,109,.14);border-radius:12px;padding:10px 12px;margin:0 0 12px;font-weight:400;font-size:.95rem}
+footer{padding:32px 0 56px;border-top:1px solid var(--ln);color:var(--mut);font-size:.9rem}
+</style>
+</head>
+<body>
+<nav aria-label="Secciones"><a href="#dominio">Dominio</a><a href="#proteccion">Protección</a><a href="#empresa">Registrar la empresa</a><a href="#cuentas">Cuánto y cuándo</a><a href="#donde">Dónde ver precios</a></nav>
+
+<header class="wrap hero">
+ <div>
+  <h1 class="hg">Proteger Veloris desde el día uno</h1>
+  <p>Cómo conseguir nuestro propio link, cómo cuidar la web y la marca, y lo legal mínimo para arrancar en Panamá. Con precios reales, dónde verlos y cada cuánto se pagan.</p>
+ </div>
+ <img class="logo" src="data:image/jpeg;base64,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" alt="Logo de VL Marketing Agency">
+</header>
+
+<section id="dominio"><div class="wrap">
+ <h2 class="hg">Dominio</h2>
+ <p class="lead">El dominio es nuestro link propio (por ejemplo, nuestronombre.com) y también lo que va después de la @ en el correo. Hoy usamos un correo de Gmail; con dominio propio nos vemos como una agencia seria.</p>
+ <div class="grid">
+  <div class="card"><span class="tag">Empezar con este</span><h3>.com</h3><div class="price">USD 10–15</div><div class="per">por año</div>
+   <ul><li>Lo puede comprar cualquiera, hoy mismo</li><li>El más reconocido por los clientes</li><li>Lo compramos en un registrador como Dynadot (USD 10.88) o Cloudflare (precio de costo)</li></ul></div>
+  <div class="card"><span class="tag">Cuando ya tengamos empresa</span><h3>.com.pa</h3><div class="price">USD 42–45</div><div class="per">por año (algunos lo piden por 2 años)</div>
+   <ul><li>Es el de Panamá y se le pide a empresas registradas</li><li>Lo administra NIC Panamá (nic.pa)</li><li>También se compra por revendedores como OVH (USD 41.89)</li></ul></div>
+  <div class="card"><span class="tag">No lo necesitamos</span><h3>.pa</h3><div class="price">USD 159–297</div><div class="per">por año, mínimo 2 años</div>
+   <ul><li>Exige tener antes el .com.pa del mismo nombre</li><li>Es caro para lo que aporta</li></ul></div>
+ </div>
+ <div class="note"><strong>Plan realista:</strong> compramos el .com ahora (unos USD 11–15 al año). Cuando la empresa esté registrada, lo ponemos a nombre de la empresa y, si queremos, sumamos el .com.pa.</div>
+ <h3>Cómo se paga y cada cuánto</h3>
+ <div class="tw"><table>
+  <tr><th>Tema</th><th>Cómo funciona</th></tr>
+  <tr><td class="n">Pago</td><td>Con tarjeta de débito o crédito Visa/Mastercard, o PayPal. Todo en dólares: en Panamá el dólar circula, así que no hay cambio de moneda.</td></tr>
+  <tr><td class="n">Frecuencia</td><td>Cada año (el .com). Hay que renovar siempre, o se pierde el dominio.</td></tr>
+  <tr><td class="n">Ojo con las promos</td><td>Un .com a USD 1 suele valer solo el primer año; el segundo año cobran el precio normal. Mirar siempre el precio de renovación.</td></tr>
+  <tr><td class="n">Si se nos pasa pagar</td><td>Hay unos 21 días de gracia y luego recuperarlo cuesta caro (en Dynadot, USD 100.92 por restaurar un .com). Por eso activamos la renovación automática.</td></tr>
+ </table></div>
+ <h3 style="margin-top:28px">Correo con nuestro dominio</h3>
+ <p class="lead" style="margin-bottom:0">Google Workspace (Business Starter) cuesta USD 7 por persona al mes pagando anual, o USD 8.40 mes a mes. Para los 3, son USD 21 al mes (USD 252 al año). Es opcional: al inicio podemos usar solo el reenvío de correo que muchos registradores incluyen con el dominio.</p>
+</div></section>
+
+<section id="proteccion"><div class="wrap">
+ <h2 class="hg">Protección</h2>
+ <p class="lead">Es sano dudar. Lo gratis que mencionamos no es “cosa de IA”: son los mismos servicios que usan empresas grandes. Lo que casi siempre falla no es la tecnología, sino una contraseña robada, un dominio que se venció o una cuenta a la que solo tiene acceso una persona. Por eso la protección va en tres capas, empezando por la más importante.</p>
+
+ <h3>Capa 1. Cuentas y contraseñas</h3>
+ <p style="max-width:44rem;margin-bottom:16px">Si alguien entra a la cuenta del dominio o al correo, controla todo lo demás. Aquí va lo primero.</p>
+ <div class="grid">
+  <div class="card"><h3>Gestor de contraseñas</h3><div class="price">USD 47.88</div><div class="per">al año, para hasta 6 personas (Bitwarden Families)</div><p class="ex"><strong>En simple:</strong> un gestor de contraseñas es una app que guarda todas nuestras claves en una bóveda cifrada, como una caja fuerte. Solo recordamos una clave maestra y la app crea y llena una contraseña distinta y larga para cada cuenta. Así nadie repite la misma clave en todo ni la manda por el chat.</p>
+   <ol><li>Entrar a bitwarden.com y crear la cuenta</li><li>Instalar la extensión en el navegador y la app en el celular</li><li>Crear una contraseña larga y distinta para cada servicio</li><li>Compartir las claves de la empresa por una carpeta compartida, nunca por WhatsApp</li></ol>
+   <p style="margin-top:8px">Gratis existe, pero solo permite compartir entre 2 personas; somos 3. La opción Teams cuesta USD 4 por persona al mes (USD 144 al año para 3) y trae control de administrador. Se paga una vez al año.</p></div>
+  <div class="card"><h3>Verificación en 2 pasos</h3><div class="price">USD 0</div><div class="per">diez minutos por cuenta</div><p class="ex"><strong>En simple:</strong> además de la contraseña, la cuenta pide un código de 6 números que cambia cada 30 segundos y sale en una app del celular. Es como el código que te pide el banco. Si alguien roba la contraseña pero no tiene tu celular, no puede entrar.</p>
+   <ol><li>Entrar a Seguridad en cada cuenta: registrador del dominio, Cloudflare, correo, Instagram y Meta</li><li>Activar la verificación en 2 pasos con una app de códigos (Google Authenticator o la de Bitwarden), no por SMS</li><li>Imprimir los códigos de recuperación y guardarlos en un lugar físico seguro</li></ol></div>
+  <div class="card"><h3>Que no dependa de una sola persona</h3><div class="price">USD 0</div><div class="per">una vez</div><p class="ex"><strong>En simple:</strong> si el dominio está solo a nombre de uno y esa persona se va, pierde el celular o se pelea con el grupo, perdemos la web. Con 2 socios con acceso, eso no pasa.</p>
+   <ul><li>Dominio y Cloudflare con un correo que controlen al menos 2 de los 3 socios</li><li>Si alguien se va o pierde el celular, no perdemos el acceso</li><li>Anotar en el gestor quién es el titular de cada cuenta</li></ul></div>
+ </div>
+
+ <h3 style="margin-top:36px">Capa 2. El dominio</h3>
+ <div class="tw"><table>
+  <tr><th>Qué hacer</th><th>Para qué sirve</th><th>Cómo y dónde</th><th>Costo</th></tr>
+  <tr><td class="n">Renovación automática</td><td>El dominio se alquila por años, no se compra para siempre. Si no se paga a tiempo, se pierde y alguien más lo puede comprar.</td><td>En el panel del registrador (Dynadot, Cloudflare u otro), dentro de la configuración del dominio. Dejar una tarjeta vigente y poner un recordatorio en el calendario 30 días antes.</td><td>USD 0</td></tr>
+  <tr><td class="n">Bloqueo de transferencia</td><td>Es un candado que impide que alguien mueva el dominio a otra empresa sin permiso.</td><td>En el mismo panel, activar “transfer lock”.</td><td>Normalmente incluido</td></tr>
+  <tr><td class="n">Privacidad de datos</td><td>Al comprar un dominio se piden nombre, correo y teléfono, y por defecto pueden verse públicamente. La privacidad los oculta.</td><td>Activarla al comprar y confirmar que viene incluida.</td><td>Normalmente incluida</td></tr>
+  <tr><td class="n">Comprarlo por 2 años</td><td>Es más difícil que se venza por olvido.</td><td>Si el registrador lo permite, pagar 2 años de una vez.</td><td>Precio del .com × 2</td></tr>
+ </table></div>
+
+ <h3 style="margin-top:36px">Capa 3. La página web</h3>
+ <div class="grid">
+  <div class="card"><h3>Cloudflare</h3><div class="price">Free: USD 0</div><div class="per">Pro: USD 20 al mes pagando anual (USD 25 mes a mes)</div><p class="ex"><strong>En simple:</strong> Cloudflare es un servicio que se pone delante de la web, como un portero: filtra visitas falsas y ataques, hace que la página cargue más rápido y le pone el candado de seguridad (HTTPS, que cifra la conexión para que nadie vea lo que se envía y evita el aviso de “sitio no seguro”). Los nameservers son la dirección que le dice a internet quién maneja el dominio; al cambiarlos, Cloudflare queda al frente.</p>
+   <ol><li>Crear cuenta en cloudflare.com y elegir “Add a domain”</li><li>Elegir el plan Free</li><li>Cambiar los nameservers en el registrador por los que indique Cloudflare (tarda unas horas)</li><li>Activar “Always Use HTTPS” para que siempre salga el candado</li></ol>
+   <p style="margin-top:8px">El plan Free incluye HTTPS y protección básica contra ataques; para una página de portafolio como la nuestra alcanza. Pro agrega reglas de firewall más fuertes y soporte; lo veríamos si vendemos en línea o recibimos ataques (USD 240 al año).</p></div>
+  <div class="card"><h3>Copia de seguridad</h3><div class="price">USD 0</div><div class="per">cada vez que cambiemos algo</div><p class="ex"><strong>En simple:</strong> una copia de la web guardada aparte. Si algo se rompe, un error borra todo o nos hackean, la volvemos a subir sin empezar de cero. GitHub y Drive son sitios gratis para guardarla.</p>
+   <ul><li>Guardar el archivo de la web en un repositorio privado de GitHub</li><li>Y una segunda copia en el Drive de la empresa</li><li>Así, si algo falla o la borran, la volvemos a subir en minutos</li></ul></div>
+  <div class="card"><h3>Formulario de contacto</h3><div class="price">USD 0</div><div class="per">una vez</div><p class="ex"><strong>En simple:</strong> Turnstile es un test casi invisible que distingue personas de robots; sin él, el formulario se llena de mensajes basura. La política de privacidad es un texto corto que dice qué datos pedimos (nombre y correo), para qué los usamos y cómo pedir que los borremos. Da confianza a los clientes.</p>
+   <ul><li>Poner Cloudflare Turnstile (gratis) para frenar los envíos falsos de bots</li><li>Agregar una política de privacidad corta: qué datos pedimos, para qué y cómo pueden pedir que los borremos</li><li>Si queremos una revisión, pagar una consulta puntual a un abogado en lugar de un servicio mensual</li></ul></div>
+ </div>
+
+ <div class="note"><strong>Protección real para 3 socios:</strong> el .com (USD 10–15) más el gestor de contraseñas (USD 47.88) da unos USD 58–63 al año. Todo lo demás de esta sección es gratis o se agrega solo si el negocio lo pide.</div>
+
+ <h3 style="margin-top:36px">Proteger el nombre y el logo: registro de marca</h3>
+ <p style="max-width:44rem;margin:8px 0 16px">Registrar la marca da el derecho exclusivo de usar “Veloris” (y el logo) en Panamá para cierta clase de servicios. Si alguien más lo registra primero, nos podría obligar a cambiar de nombre. Se hace ante la DIGERPI, del Ministerio de Comercio e Industrias.</p>
+ <h3>¿Qué es el B/. 140.50?</h3>
+ <p style="max-width:44rem;margin:8px 0 0">Son tasas del Estado, no honorarios de abogado. La guía oficial del MICI las desglosa así para registrar productos o servicios en una clase:</p>
+ <div class="tw"><table>
+  <tr><th>Concepto</th><th>Monto</th><th>En simple</th></tr>
+  <tr><td class="n">Derecho de registro</td><td>B/. 100.00</td><td>El pago principal: lo que cuesta que el Estado nos reconozca la marca como nuestra.</td></tr>
+  <tr><td class="n">Inscripción</td><td>B/. 4.50</td><td>Anotar la marca en el libro oficial del Estado.</td></tr>
+  <tr><td class="n">Tasa de solicitud</td><td>B/. 12.00 (10.00 + 2.00 de sobretasa)</td><td>Lo que cobra el Estado por recibir y revisar nuestro papeleo. La sobretasa es un recargo que se suma a la tasa.</td></tr>
+  <tr><td class="n">Tasa de publicación</td><td>B/. 24.00 (20.00 + 4.00 de sobretasa)</td><td>Costo de publicar la marca en el Boletín Oficial, para que cualquiera pueda oponerse durante 2 meses si cree que se parece a la suya.</td></tr>
+  <tr><td class="n">Total, primera clase</td><td><strong>B/. 140.50</strong></td><td>Se paga una vez, al hacer la solicitud.</td></tr>
+  <tr><td class="n">Cada clase adicional</td><td>B/. 112.00</td><td>Si registramos otra categoría de servicios.</td></tr>
+  <tr><td class="n">Renovación, cada 10 años (por clase)</td><td>B/. 134.00</td><td>Para mantener la protección vigente.</td></tr>
+ </table></div>
+ <p style="max-width:44rem;margin-bottom:12px;color:var(--mut);font-size:.9rem">La guía oficial solo da los montos; las explicaciones de la tercera columna son en palabras simples.</p>
+ <p style="max-width:44rem;margin-bottom:20px">Una clase es una categoría de servicios de la Clasificación de Niza. Para una agencia, la más común es la 35 (publicidad). La producción audiovisual suele caer en la 41 y el diseño gráfico en la 42; hay que confirmarlo en la clasificación. Registrar dos clases serían B/. 252.50 en total.</p>
+ <div class="grid">
+  <div class="card"><h3>Paso a paso</h3>
+   <ol><li>Revisar gratis que “Veloris” esté libre en consulta.digerpi.gob.pa/Marcas/Disponibles</li><li>Elegir la clase o las clases</li><li>Llenar el formulario de solicitud de la DIGERPI</li><li>Pagar en una boleta del Banco Nacional (renglón 580, con cédula y dígito verificador) o por banca en línea</li><li>La DIGERPI revisa y publica la marca; durante 2 meses cualquiera puede oponerse</li><li>Sin oposición, entregan el certificado de registro</li></ol></div>
+  <div class="card"><h3>Lo que la guía no aclara</h3>
+   <ul><li>Cuánto tarda el trámite completo</li><li>Si el nombre y el logo se registran juntos o por separado (podrían ser dos solicitudes)</li><li>Si hay una oposición, se resuelve en un juzgado de comercio y ahí sí conviene un abogado, con costo aparte</li></ul>
+   <p style="margin-top:8px">Preguntarlo antes de pagar a dgrpi@mici.gob.pa.</p></div>
+ </div>
+</div></section>
+
+<section id="empresa"><div class="wrap">
+ <h2 class="hg">Registrar la empresa</h2>
+ <p class="lead">Aquí solo lo básico. Para arrancar no hace falta un abogado caro: hay trámites que se hacen en línea.</p>
+ <div class="grid">
+  <div class="card"><h3>Persona natural</h3><div class="price">USD 15</div><div class="per">Aviso de Operación, pago único</div>
+   <ul><li>En panamaemprende.gob.pa, en minutos</li><li>Cédula o pasaporte y dirección física en Panamá</li><li>Un solo socio opera a su nombre</li></ul></div>
+  <div class="card"><span class="tag">Más realista para 3 socios</span><h3>Sociedad de Emprendimiento</h3><div class="price">Bajo costo</div><div class="per">Precio exacto: confirmar en AMPYME</div>
+   <ul><li>Se tramita en AMPYME, virtual o presencial</li><li>Registro y Aviso de Operación en un solo proceso</li><li>No hace falta abogado, según AMPYME</li><li>Los socios deben vivir en Panamá</li></ul></div>
+  <div class="card"><h3>Sociedad Anónima</h3><div class="price">USD 800–2,100</div><div class="per">con abogado, más USD 300 de Tasa Única cada año</div>
+   <ul><li>Más formal y más cara</li><li>Dejarla para cuando crezcamos</li></ul></div>
+ </div>
+ <h3 style="margin-top:36px">Palabras que vas a oír</h3>
+ <div class="tw"><table>
+  <tr><th>Término</th><th>Qué es en simple</th></tr>
+  <tr><td class="n">Persona natural</td><td>Trabajar a nombre propio, sin crear una empresa. El RUC es tu cédula. Hay que ser mayor de edad.</td></tr>
+  <tr><td class="n">Sociedad</td><td>Una empresa con vida legal propia, separada de sus dueños. Si le va mal, el riesgo es de la empresa y no de la casa de los socios.</td></tr>
+  <tr><td class="n">Sociedad de Emprendimiento</td><td>Un tipo de sociedad pensado para negocios que empiezan: más sencilla y barata, se tramita en AMPYME.</td></tr>
+  <tr><td class="n">Sociedad Anónima (S.A.)</td><td>La sociedad clásica. Pide un presidente, un secretario y un tesorero (pueden ser 3 socios) y se hace con abogado.</td></tr>
+  <tr><td class="n">Pacto social</td><td>El documento de nacimiento de la empresa: nombre, socios, qué hace y cómo se manda.</td></tr>
+  <tr><td class="n">Registro Público</td><td>Oficina donde se inscribe la sociedad; es lo que la hace existir legalmente.</td></tr>
+  <tr><td class="n">Capital declarado</td><td>El monto con el que se declara la empresa al crearla. Lo común es USD 10,000 en el papel; no hay mínimo.</td></tr>
+  <tr><td class="n">RUC</td><td>El número con el que el Estado identifica a un negocio para cobrar impuestos y emitir facturas. Lo da la DGI.</td></tr>
+  <tr><td class="n">DGI</td><td>La oficina de impuestos de Panamá.</td></tr>
+  <tr><td class="n">Aviso de Operación</td><td>El permiso para abrir un negocio, que da el MICI en Panamá Emprende. Sin él no se puede operar legalmente. No vence.</td></tr>
+  <tr><td class="n">Tasa Única Anual</td><td>Un cobro de USD 300 cada año que pagan las sociedades al Registro Público para seguir activas.</td></tr>
+  <tr><td class="n">AMPYME</td><td>La entidad del Estado que apoya a micro y pequeñas empresas.</td></tr>
+ </table></div>
+ <div class="note"><strong>Para jóvenes que arrancan:</strong> lo realista es empezar pequeño (persona natural o Sociedad de Emprendimiento) e ir formalizando cuando entren los primeros clientes. No hace falta gastar miles de dólares el primer día.</div>
+ <div class="note"><strong>Para tener en cuenta:</strong> RUC y declaraciones en la DGI, una cuenta bancaria separada, un contrato sencillo para cada cliente y cuidar los derechos de música, fotos y videos que usemos en producción audiovisual. Sin lenguaje legal pesado: se ve cuando llegue el primer cliente.</div>
+</div></section>
+
+<section id="cuentas"><div class="wrap">
+ <h2 class="hg">Cuánto y cuándo</h2>
+ <p class="lead">Lo que necesitamos para arrancar, sumando solo lo imprescindible.</p>
+ <div class="tw"><table>
+  <tr><th>Rubro</th><th>Costo</th><th>Cada cuánto se paga</th></tr>
+  <tr><td class="n">Dominio .com</td><td>USD 10–15</td><td>Cada año</td></tr>
+  <tr><td class="n">Protección web básica</td><td>USD 0</td><td>—</td></tr>
+  <tr><td class="n">Aviso de Operación (persona natural)</td><td>USD 15</td><td>Una vez</td></tr>
+  <tr><td class="n">Gestor de contraseñas compartido (Bitwarden Families)</td><td>USD 47.88</td><td>Cada año</td></tr>
+  <tr><td class="n">Registro de marca (1 clase)</td><td>B/. 140.50</td><td>Cada 10 años (renovación B/. 134)</td></tr>
+  <tr><td class="n">Correo Google Workspace (opcional, 3 personas)</td><td>USD 21 al mes</td><td>Mensual o anual</td></tr>
+  <tr><td class="n">.com.pa (cuando haya empresa)</td><td>USD 42–45</td><td>Cada año o cada 2 años</td></tr>
+  <tr><td class="n">Tasa Única (solo si hacemos una S.A.)</td><td>USD 300</td><td>Cada año</td></tr>
+ </table></div>
+ <p class="lead"><span class="big" style="font-size:2.4rem">≈ USD 215</span><br>para arrancar: dominio, gestor de contraseñas, aviso de operación y marca, sin contar correo ni sociedad. Entre 3, unos USD 72 por persona.</p>
+</div></section>
+
+<section id="donde"><div class="wrap">
+ <h2 class="hg">Dónde ver los precios</h2>
+ <p class="lead">Los precios cambian. Antes de pagar, confirmar en cada sitio. Consultados en noviembre de 2026.</p>
+ <ul class="links">
+  <li><a href="https://www.nic.pa/">nic.pa<small>Registro oficial de dominios .com.pa y .pa</small></a></li>
+  <li><a href="https://www.dynadot.com/es/dominio/com">Dynadot<small>Precio de registro y renovación del .com</small></a></li>
+  <li><a href="https://www.ovhcloud.com/es/domains/tld/compa/">OVHcloud<small>.com.pa a través de revendedor</small></a></li>
+  <li><a href="https://blog.cloudflare.com/es-es/cloudflare-registrar/">Cloudflare Registrar<small>Dominios a precio de costo</small></a></li>
+  <li><a href="https://www.panamaemprende.gob.pa/">Panamá Emprende<small>Aviso de Operación (USD 15 o 55)</small></a></li>
+  <li><a href="https://consulta.digerpi.gob.pa/Marcas/Disponibles">DIGERPI<small>Consulta gratis de marcas disponibles</small></a></li>
+  <li><a href="https://bitwarden.com/es-la/help/about-bitwarden-plans/">Bitwarden<small>Planes del gestor de contraseñas</small></a></li>
+  <li><a href="https://zf.mici.gob.pa/wp-content/uploads/2023/08/Instructivo-Registro-de-Marcas-1.pdf">Guía de marcas del MICI<small>Pasos y tasas de DIGERPI</small></a></li>
+  <li><a href="https://workspace.google.com/intl/es-419_us/pricing.html">Google Workspace<small>Precio del correo con dominio propio</small></a></li>
+ </ul>
+ <p style="margin-top:20px">Para la Sociedad de Emprendimiento, consultar directamente en AMPYME (ampyme.gob.pa).</p>
+</div></section>
+
+<footer><div class="wrap">Veloris Agency · Todos los montos son aproximados y en dólares. Confirmar antes de pagar.</div></footer>
+</body>
+</html>
